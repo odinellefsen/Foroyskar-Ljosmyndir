@@ -1,3 +1,8 @@
-for(let i = 0; i <= 10; i++) {
-    console.log(i);
+counter = (num) => {
+    counting = [];
+
+    for(let i = 10; i >= num; i--) {
+        counting.push(i);
+    }
+    return counting;
 }
