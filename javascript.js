@@ -61,19 +61,16 @@ initiate = () => {
 
             if (q <= -1) {
                 clearInterval(countdownTimer);
+                console.log('Evil has been eliminated');
             }
-
         }, 1000);
-
 }
-
-startTimer(); 
-        console.log('Evil has been eliminated');
-       }
+    startTimer();
+     }
        DeathNote();
        } 
     else {
-        console.log('My diary, this is the property of Óðin');
+        console.log('My notebook, this is the property of Óðin Andor Ellefsen');
        }    
 }
 //
