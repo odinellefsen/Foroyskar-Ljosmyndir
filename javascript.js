@@ -72,5 +72,6 @@ initiate = () => {
     else {
         console.log('My notebook, this is the property of Óðin Andor Ellefsen');
        }    
+       return 'Elimination Initiated';
 }
 //
