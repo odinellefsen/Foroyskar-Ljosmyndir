@@ -1,8 +1,15 @@
 counter = (num) => {
     counting = [];
 
-    for(let i = 10; i >= num; i--) {
-        counting.push(i);
+    if (num < 0) {
+        for(let i = 0; i >= num; i--) {
+            counting.push(i);
+        }
+    }
+    else if (num > 0) {
+        for(let i = 0; i <= num; i++) {
+            counting.push(i);
+        }
     }
     return counting;
 }
