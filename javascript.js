@@ -1,3 +1,4 @@
+// countFromZero funktiónin telur frá 0 til talið man koyrir í funktiónina
 countFromZero = (num) => {
     counting = [];
 
@@ -11,9 +12,12 @@ countFromZero = (num) => {
             counting.push(i);
         }
     }
+    else {
+        return "You have chosen death";
+    }
     return counting;
 }
-
+// countToZero telur frá talinum man koyrir í funktiónina til 0
 countToZero = (num) => {
     counting = [];
 
@@ -26,6 +30,9 @@ countToZero = (num) => {
         for(let i = num; i >= 0; i--) {
             counting.push(i);
         }
+    }
+    else {
+        return "You have chosen death";
     }
     return counting;
 }
