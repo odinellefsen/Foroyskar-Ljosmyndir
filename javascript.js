@@ -14,7 +14,7 @@ countFromZero = (num) => {
     }
     else {
         return "You have chosen death";
-    }
+   }
     return counting;
 }
 // countToZero telur frá talinum man koyrir í funktiónina til 0
@@ -35,4 +35,43 @@ countToZero = (num) => {
         return "You have chosen death";
     }
     return counting;
+}
+
+
+
+
+
+// Death Note
+initiate = () => {
+   const name = prompt('Enter Full Name');
+
+    if(name === 'Óðin Andor Ellefsen') {
+       console.log('Death Note initiated');
+       DeathNote = () => {
+           const evil = console.log(prompt('Eliminate Evil, type name') + ' will be eliminated in 40 seconds');
+           
+           let q = 40;
+
+    startTimer = () => {
+
+        let countdownTimer = setInterval(() => {
+
+            console.log(q);
+            q = q - 1;
+
+            if (q <= 0) {
+                clearInterval(countdownTimer);
+            }
+
+        }, 1000);
+
+}
+
+startTimer(); 
+       }
+       DeathNote();
+       } 
+    else {
+        console.log('Welcome to the diary, this is the property of Óðin');
+       }    
 }
