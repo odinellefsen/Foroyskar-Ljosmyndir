@@ -15,17 +15,17 @@ countFromZero = (num) => {
 }
 
 countToZero = (num) => {
-    counter = [];
+    counting = [];
 
     if(num < 0) {
         for(let i = num; i <= 0; i++) {
-            counter.push(i);
+            counting.push(i);
         }
     }
     else if(num > 0) {
         for(let i = num; i >= 0; i--) {
-            counter.push(i);
+            counting.push(i);
         }
     }
-    return counter;
+    return counting;
 }
