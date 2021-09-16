@@ -59,7 +59,7 @@ initiate = () => {
             console.log(q);
             q = q - 1;
 
-            if (q <= 0) {
+            if (q <= -1) {
                 clearInterval(countdownTimer);
             }
 
@@ -68,10 +68,12 @@ initiate = () => {
 }
 
 startTimer(); 
+        console.log('Evil has been eliminated');
        }
        DeathNote();
        } 
     else {
-        console.log('Welcome to the diary, this is the property of Óðin');
+        console.log('My diary, this is the property of Óðin');
        }    
 }
+//
