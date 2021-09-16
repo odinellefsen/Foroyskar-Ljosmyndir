@@ -1,4 +1,4 @@
-counter = (num) => {
+countFromZero = (num) => {
     counting = [];
 
     if (num < 0) {
@@ -12,4 +12,20 @@ counter = (num) => {
         }
     }
     return counting;
+}
+
+countToZero = (num) => {
+    counter = [];
+
+    if(num < 0) {
+        for(let i = num; i <= 0; i++) {
+            counter.push(i);
+        }
+    }
+    else if(num > 0) {
+        for(let i = num; i >= 0; i--) {
+            counter.push(i);
+        }
+    }
+    return counter;
 }
