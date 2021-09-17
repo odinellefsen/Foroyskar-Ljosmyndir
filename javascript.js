@@ -37,13 +37,9 @@ countToZero = (num) => {
     return counting;
 }
 
-
-
-
-
 // Death Note
 initiate = () => {
-   const name = prompt('Enter Full Name');
+   const name = prompt('Enter Name');
 
     if(name === 'Óðin Andor Ellefsen') {
        console.log('Death Note initiated');
@@ -62,6 +58,16 @@ initiate = () => {
             if (q <= -1) {
                 clearInterval(countdownTimer);
                 console.log('Evil has been eliminated');
+                let more = prompt('Do you wish to rid the world of more evil now?');
+                if (more === 'Yes') {
+                    DeathNote();
+                }
+                else if(more === 'Later') {
+                    location.reload();
+                }
+                else {
+                    console.log('Hello There Bro');
+                }
             }
         }, 1000);
 }
@@ -70,8 +76,8 @@ initiate = () => {
        DeathNote();
        } 
     else {
-        console.log('My notebook, this is the property of Óðin Andor Ellefsen');
+        console.log('My notebook');
+        return 'property of Óðin Andor Ellefsen';
        }    
        return 'Elimination Initiated';
 }
-//
