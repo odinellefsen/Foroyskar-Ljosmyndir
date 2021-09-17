@@ -66,7 +66,7 @@ initiate = () => {
                     location.reload();
                 }
                 else {
-                    console.log('Hello There Bro');
+                    console.log('Jeez');
                 }
             }
         }, 1000);
@@ -76,8 +76,10 @@ initiate = () => {
        DeathNote();
        } 
     else {
-        console.log('My notebook');
-        return 'property of Óðin Andor Ellefsen';
+        console.log('My Diary');
+        console.log(Date());
+        return 'Property of ÓAE';
        }    
        return 'Elimination Initiated';
 }
+
