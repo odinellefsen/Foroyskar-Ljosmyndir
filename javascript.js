@@ -48,7 +48,7 @@ countToZero = (num) => {
 initiate = () => {
    const name = prompt('Enter Name');
 
-    if(name === 'Óðin Andor Ellefsen' || 'Óðin A. Ellefsen' || 'Óðin Ellefsen' || 'Óðin A Ellefsen') {
+    if(name === 'Óðin Andor Ellefsen') {
        console.log('Death Note initiated');
        DeathNote = () => {
            console.log(prompt('Eliminate Evil, type name') + ' will be eliminated in 40 seconds');
