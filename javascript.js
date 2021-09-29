@@ -82,10 +82,13 @@ initiate = () => {
      }
        DeathNote();
        } 
-    else {
+    else if (name === 'Óðin Ellefsen'){
         console.log('My Diary');
         console.log(Date());
         return 'Property of ÓAE';
-       }    
+       }
+    else {
+        return location.reload();
+    }    
        return 'Elimination Initiated';
 }
